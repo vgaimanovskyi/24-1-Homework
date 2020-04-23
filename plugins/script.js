@@ -29,14 +29,13 @@ if ((a %= b) === 0) {
 console.log(result);
 
 // 3. Запросить у пользователя число и вывести все делители этого числа.
-// !!! error !!!
 const number = +prompt("Enter number");
 let result = 1;
 for (let i = 2; i <= number; i++) {
     if (number % i == 0) {
         result = i;
     }
-    console.log(result);
+    console.log(i);
 }
 
 // 4. Определить количество цифр в введенном числе.
@@ -47,24 +46,14 @@ for (i = 0; number > 1; i++) {
 console.log(i);
 
 // 5. Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.
-const num1 = +prompt("Enter number1"),
-    num2 = +prompt("Enter number2"),
-    num3 = +prompt("Enter number3"),
-    num4 = +prompt("Enter number4"),
-    num5 = +prompt("Enter number5"),
-    num6 = +prompt("Enter number6"),
-    num7 = +prompt("Enter number7"),
-    num8 = +prompt("Enter number8"),
-    num9 = +prompt("Enter number9"),
-    num10 = +prompt("Enter number10");
-let num = [num1, num2, num3, num4, num5, num6, num7, num8, num9, num10];
 let pos = 0,
     neg = 0,
     zero = 0;
 for (let i = 0; i < 10; i++) {
-    if (num[i] > 0) {
+    let num = +prompt("Enter number");
+    if (num > 0) {
         pos += 1;
-    } else if (num[i] < 0) {
+    } else if (num < 0) {
         neg += 1;
     } else {
         zero += 1;
@@ -110,12 +99,12 @@ for (let number = 2; number <= 9; number++) {
         console.log(`${number} x ${i} = ${result}`);
     }
 }
-
+*/
 // 10. Игра «Угадай число». Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом: каждую итерацию цикла
 // делите диапазон чисел пополам, записываете результат в N и спрашиваете у пользователя «Ваше число > N, < N или==N?».
 // В зависимости от того, что указал пользователь, уменьшаете диапазон. Начальный диапазон от 0 до 100, поделили пополам и получили 50.
 // Если пользователь указал, что его число > 50, то изменили диапазон на от 51 до 100. И так до тех пор, пока пользователь не выберет == N.
-!!! ERROR !!!
+/*
 const max = 100,
     min = 1;
 let N = max / 2;
